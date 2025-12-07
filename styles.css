@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+ 
+h1 {
+    color: #ff69b4;
+}
+
+.birthday-image {
+    width: 250px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.candles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.candle {
+    width: 20px;
+    height: 60px;
+    background-color: #ffd700;
+    margin: 0 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.candle:before {
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-color: #ff4500;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.candle:before {
+    animation: flicker 1s infinite;
+}
+
+#quote {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff69b4;
+    color: #841212;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #14ff53;
+}
