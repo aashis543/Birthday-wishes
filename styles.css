@@ -80,3 +80,18 @@ button {
 button:hover {
     background-color: #14ff53;
 }
+/* Footer Styles */
+footer  {
+color: #261bbd;
+text-decoration: none;
+transition: all 0.3 ease;
+margin-bottom: 0;
+}
+footer a:hover {
+color: #569608;
+transform: scale(1.1);
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
